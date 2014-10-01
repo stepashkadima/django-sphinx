@@ -108,8 +108,9 @@ class SphinxClient:
 		self._limit			= 20							# how much records to return from result-set starting at offset (default is 20)
 		self._mode			= SPH_MATCH_ALL					# query matching mode (default is SPH_MATCH_ALL)
 		self._weights		= []							# per-field weights (default is 1 for all fields)
-		self._sort			= SPH_SORT_RELEVANCE			# match sorting mode (default is SPH_SORT_RELEVANCE)
-		self._sortby		= ''							# attribute to sort by (defualt is "")
+		#TODO: move this to settings
+		self._sort			= SPH_SORT_EXTENDED 			# match sorting mode (default is SPH_SORT_RELEVANCE)
+		self._sortby		= '@relevance DESC, date DESC'  # attribute to sort by (defualt is "")
 		self._min_id		= 0								# min ID to match (default is 0)
 		self._max_id		= 0								# max ID to match (default is UINT_MAX)
 		self._filters		= []							# search filters
