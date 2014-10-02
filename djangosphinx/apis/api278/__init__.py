@@ -110,7 +110,7 @@ class SphinxClient:
 		self._weights		= []							# per-field weights (default is 1 for all fields)
 		#TODO: move this to settings
 		self._sort			= SPH_SORT_EXTENDED 			# match sorting mode (default is SPH_SORT_RELEVANCE)
-		self._sortby		= '@relevance DESC, date DESC'  # attribute to sort by (defualt is "")
+		self._sortby		= 'date DESC'  # attribute to sort by (defualt is "")
 		self._min_id		= 0								# min ID to match (default is 0)
 		self._max_id		= 0								# max ID to match (default is UINT_MAX)
 		self._filters		= []							# search filters
